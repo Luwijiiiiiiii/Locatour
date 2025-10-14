@@ -157,4 +157,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/profile" />
 
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="363dp"
+        android:layout_height="22dp"
+        app:srcCompat="@drawable/recommended_bar_nobg__1"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="366dp"
+        android:layout_height="319dp"
+        android:scaleType="matrix"
+        app:srcCompat="@drawable/tourist_spots"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

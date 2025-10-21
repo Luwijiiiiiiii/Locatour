@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
     ImageButton locationsBtn;
     ImageButton PersonBtn;
 
+    //event
+    ImageButton eventpop;
+    ImageButton event_parade;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,5 +60,22 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+        // Event
+        eventpop = findViewById(R.id.eventpop);
+        eventpop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StyleableToast.makeText(MainActivity.this, "Development Underway, feature coming soon!", R.style.comingSoon).show();
+            }
+        });
+
+        event_parade = findViewById(R.id.event_parade);
+        event_parade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StyleableToast.makeText(MainActivity.this, "Development Underway, feature coming soon!", R.style.comingSoon).show();
+            }
+        });
+        // endEvent
     }
 }

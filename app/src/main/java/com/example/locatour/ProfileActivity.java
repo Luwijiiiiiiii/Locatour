@@ -1,5 +1,6 @@
 package com.example.locatour;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +17,7 @@ import io.github.muddz.styleabletoast.StyleableToast;
 public class ProfileActivity extends AppCompatActivity {
     Button terms;
     Button faveBtn;
+    ImageButton homeBtn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,15 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 StyleableToast.makeText(ProfileActivity.this, "Development Underway, feature   coming soon!", R.style.comingSoon).show();
+            }
+        });
+        homeBtn2 = findViewById(R.id.homeBtn2);
+        homeBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+                StyleableToast.makeText(ProfileActivity.this, "Home Page", R.style.comingSoon).show();
+                startActivity(intent);
             }
         });
     }

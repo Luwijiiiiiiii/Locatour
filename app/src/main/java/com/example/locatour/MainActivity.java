@@ -47,12 +47,14 @@ public class MainActivity extends AppCompatActivity {
         });
         PersonBtn  = findViewById(R.id.PersonBtn);
         PersonBtn.setOnClickListener( new View.OnClickListener(){
+
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intent);
                 StyleableToast.makeText(MainActivity.this, "Welcome to Profile!", R.style.comingSoon).show();
             }
-            Intent intent = new Intent(this, ProfileActivity::class.java)
+
         });
     }
 }

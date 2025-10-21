@@ -15,6 +15,8 @@ import io.github.muddz.styleabletoast.StyleableToast;
 
 public class ProfileActivity extends AppCompatActivity {
     Button terms;
+    Button faveBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +32,13 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 StyleableToast.makeText(ProfileActivity.this, "You've agreed with the terms and condition", R.style.comingSoon).show();
+            }
+        });
+        faveBtn = findViewById(R.id.faveBtn);
+        faveBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StyleableToast.makeText(ProfileActivity.this, "Development Underway, feature coming soon!", R.style.comingSoon).show();
             }
         });
     }

@@ -133,7 +133,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/faveBtn"
         android:layout_width="257dp"
         android:layout_height="44dp"
         android:layout_marginStart="76dp"

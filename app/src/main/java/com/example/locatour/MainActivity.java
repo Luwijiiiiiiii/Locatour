@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         HomeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                StyleableToast.makeText(MainActivity.this, "Already at Home Page, NIGGA YOU RETARDED??", R.style.homeToast).show();
+                StyleableToast.makeText(MainActivity.this, "Already at Home Page", R.style.homeToast).show();
             }
         });
         MapsBtn = findViewById(R.id.MapsBtn);

@@ -49,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
                 StyleableToast.makeText(MainActivity.this, "Development Underway, feature coming soon!", R.style.comingSoon).show();
             }
         });
+        locationsBtn = findViewById(R.id.locationBtn);
+        locationsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StyleableToast.makeText(MainActivity.this, "Development Underway, feature coming soon!", R.style.comingSoon).show();
+            }
+        });
         PersonBtn  = findViewById(R.id.PersonBtn);
         PersonBtn.setOnClickListener( new View.OnClickListener(){
 

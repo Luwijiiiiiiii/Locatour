@@ -19,6 +19,7 @@ public class ProfileActivity extends AppCompatActivity {
     Button faveBtn;
     Button button;
     Button logOut;
+    Button settings;
     ImageButton homeBtn2;
 
     @Override
@@ -71,6 +72,13 @@ public class ProfileActivity extends AppCompatActivity {
             public void onClick(View view) {
                 finishAffinity();  // closes all activities and exits the app
                 System.exit(0);    // (optional) ensures the app is fully closed
+            }
+        });
+        settings = findViewById(R.id.button3);
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StyleableToast.makeText(ProfileActivity.this, "Development Underway, feature coming soon!", R.style.comingSoon).show();
             }
         });
 

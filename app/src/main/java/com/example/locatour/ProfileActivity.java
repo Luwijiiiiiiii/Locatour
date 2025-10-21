@@ -17,6 +17,8 @@ import io.github.muddz.styleabletoast.StyleableToast;
 public class ProfileActivity extends AppCompatActivity {
     Button terms;
     Button faveBtn;
+    Button button;
+    Button logOut;
     ImageButton homeBtn2;
 
     @Override
@@ -45,6 +47,8 @@ public class ProfileActivity extends AppCompatActivity {
 
             }
         });
+
+        //home button fuctions
         homeBtn2 = findViewById(R.id.homeBtn2);
         homeBtn2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,5 +58,21 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StyleableToast.makeText(ProfileActivity.this, "Development Underway, feature coming soon!", R.style.comingSoon).show();
+            }
+        });
+        logOut = findViewById(R.id.button6);
+        logOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finishAffinity();  // closes all activities and exits the app
+                System.exit(0);    // (optional) ensures the app is fully closed
+            }
+        });
+
     }
 }

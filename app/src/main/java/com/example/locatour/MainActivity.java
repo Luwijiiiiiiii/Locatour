@@ -1,5 +1,6 @@
 package com.example.locatour;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         HomeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                StyleableToast.makeText(MainActivity.this, "Already at Home Page, NIGGA YOU RETARDED??", R.style.homeToast).show();
+                StyleableToast.makeText(MainActivity.this, "Already at Home Page", R.style.homeToast).show();
             }
         });
         MapsBtn = findViewById(R.id.MapsBtn);
@@ -43,6 +44,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 StyleableToast.makeText(MainActivity.this, "Development Underway, feature coming soon!", R.style.comingSoon).show();
             }
+        });
+        PersonBtn  = findViewById(R.id.PersonBtn);
+        PersonBtn.setOnClickListener( new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intent);
+                StyleableToast.makeText(MainActivity.this, "Welcome to Profile!", R.style.comingSoon).show();
+            }
+
         });
     }
 }

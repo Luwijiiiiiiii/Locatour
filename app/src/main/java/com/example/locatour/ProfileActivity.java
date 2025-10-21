@@ -40,7 +40,9 @@ public class ProfileActivity extends AppCompatActivity {
         faveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                StyleableToast.makeText(ProfileActivity.this, "Development Underway, feature   coming soon!", R.style.comingSoon).show();
+                Intent intent = new Intent(ProfileActivity.this, FeatureActivity.class);
+                startActivity(intent);
+
             }
         });
         homeBtn2 = findViewById(R.id.homeBtn2);

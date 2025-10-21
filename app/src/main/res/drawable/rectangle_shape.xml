@@ -11,7 +11,7 @@
 <!--        android:color="#2E7D32" />-->
 
     <!-- Corner radius (optional, remove for sharp edges) -->
-    <corners android:radius="8dp" />
+<!--    <corners android:radius="8dp" />-->
 
     <!-- Padding inside the shape -->
     <padding

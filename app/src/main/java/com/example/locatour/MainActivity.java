@@ -65,7 +65,9 @@ public class MainActivity extends AppCompatActivity {
         eventpop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                StyleableToast.makeText(MainActivity.this, "Development Underway, feature coming soon!", R.style.comingSoon).show();
+                Intent eventIntent = new Intent(MainActivity.this, Event.class);
+                startActivity(eventIntent);
+                StyleableToast.makeText(MainActivity.this, "Welcome to Events!", R.style.comingSoon).show();
             }
         });
 

@@ -9,20 +9,39 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="512dp"
-        android:layout_height="566dp"
+        android:layout_width="fill_parent"
+        android:layout_height="466dp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:srcCompat="@drawable/eventpop"
-        tools:layout_editor_absoluteX="-53dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/eventpop" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="fill_parent"
         android:layout_height="264dp"
-        android:text="   "
+        android:text="Baguio KCON: Baguio-Korea  Friendship Month 2 "
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="466dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:text= "Annyeong, Baguio
+        Get ready for Baguio KCon 2: Korean Friendship Day this October 5 at
+    Session Road, Baguio City! Enjoy a whole day of K-pop vibes, fashion,
+    food, and fun activities from 8AM to 6PM! Don’t miss the chance to
+    celebrate friendship and culture with us. See you at Session Road – let’s
+    make unforgettable memories together! #BreatheBaguio "
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

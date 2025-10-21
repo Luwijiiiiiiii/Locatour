@@ -38,7 +38,7 @@ public class ProfileActivity extends AppCompatActivity {
         faveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                StyleableToast.makeText(ProfileActivity.this, "Development Underway, feature coming soon!", R.style.comingSoon).show();
+                StyleableToast.makeText(ProfileActivity.this, "Development Underway, feature   coming soon!", R.style.comingSoon).show();
             }
         });
     }

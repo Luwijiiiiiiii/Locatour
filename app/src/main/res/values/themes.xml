@@ -6,4 +6,18 @@
     </style>
 
     <style name="Theme.Locatour" parent="Base.Theme.Locatour" />
+    <style name="homeToast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#EFEFEF</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#FF0000</item>
+        <item name="stSolidBackground">true</item>
+    </style>
+    <style name="comingSoon">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#000000</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#F8F8F8</item>
+        <item name="stSolidBackground">true</item>
+    </style>
 </resources>

@@ -103,7 +103,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/HomeBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="366dp"
@@ -114,7 +114,7 @@
         app:srcCompat="@drawable/blue_home" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/MapsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="279dp"
@@ -125,7 +125,7 @@
         app:srcCompat="@drawable/paper_map" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/SearchBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="188dp"
@@ -136,7 +136,7 @@
         app:srcCompat="@drawable/search" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/locationBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="92dp"
@@ -147,7 +147,7 @@
         app:srcCompat="@drawable/location" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/PersonBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="9dp"
@@ -161,18 +161,26 @@
         android:id="@+id/imageView15"
         android:layout_width="363dp"
         android:layout_height="22dp"
-        app:srcCompat="@drawable/recommended_bar_nobg__1"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="330dp" />
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/recommended_bar_nobg__1" />
 
     <ImageView
         android:id="@+id/imageView18"
         android:layout_width="366dp"
         android:layout_height="319dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="61dp"
         android:scaleType="matrix"
-        app:srcCompat="@drawable/tourist_spots"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="351dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/tourist_spots" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

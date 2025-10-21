@@ -32,7 +32,7 @@ android {
 }
 
 dependencies {
-
+    implementation("io.github.muddz:styleabletoast:2.4.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

@@ -46,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
         MapsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MapMenu.class);
+                startActivity(intent);
+            }
+        });
+        locationsBtn = findViewById(R.id.locationBtn);
+        locationsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 StyleableToast.makeText(MainActivity.this, "Development Underway, feature coming soon!", R.style.comingSoon).show();
             }
         });
@@ -55,8 +63,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-                startActivity(intent);
                 StyleableToast.makeText(MainActivity.this, "Welcome to Profile!", R.style.comingSoon).show();
+                startActivity(intent);
+
             }
 
         });

@@ -32,6 +32,9 @@ android {
 }
 
 dependencies {
+    implementation("org.osmdroid:osmdroid-android:6.1.17")
+    implementation("org.osmdroid:osmdroid-wms:6.1.17")
+    implementation("com.google.android.gms:play-services-location:21.2.0")
     implementation("io.github.muddz:styleabletoast:2.4.0")
     implementation(libs.appcompat)
     implementation(libs.material)

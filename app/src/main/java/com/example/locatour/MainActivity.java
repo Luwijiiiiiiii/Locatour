@@ -46,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
         MapsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                StyleableToast.makeText(MainActivity.this, "Development Underway, feature coming soon!", R.style.comingSoon).show();
+                Intent intent = new Intent(MainActivity.this, MapMenu.class);
+                startActivity(intent);
             }
         });
         locationsBtn = findViewById(R.id.locationBtn);

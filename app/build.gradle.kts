@@ -7,6 +7,8 @@ android {
     compileSdk = 36
 
     defaultConfig {
+        val apiKey: String = (project.findProperty("GRAPH_HOPPER_API_KEY") ?: "") as String
+        buildConfigField("String", "GRAPH_HOPPER_API_KEY", "\"$apiKey\"")
         applicationId = "com.example.locatour"
         minSdk = 24
         targetSdk = 36
@@ -15,9 +17,11 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+    
 
     buildTypes {
         release {
+
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -36,6 +40,8 @@ dependencies {
     implementation("org.osmdroid:osmdroid-wms:6.1.17")
     implementation("com.google.android.gms:play-services-location:21.2.0")
     implementation("io.github.muddz:styleabletoast:2.4.0")
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

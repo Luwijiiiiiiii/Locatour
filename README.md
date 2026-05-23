@@ -1,0 +1,1 @@
+ONGOING Developed a mobile application to help tourists in Baguio find jeepneys for their destinations. The project is still ongoing. The app is designed for curious travelers who want to explore the city like a local, affordably, sustainably, and with a deeper connection to its culture.
